@@ -41,6 +41,7 @@ body{
   grid-area: signo;
   align-self: center;
   text-align: center;
+  color: yellow;
 }
 
 #b1{

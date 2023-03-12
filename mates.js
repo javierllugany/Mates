@@ -5,20 +5,21 @@ matesYGatos.presentacion=function(){
     matesYGatos.participante={identidad:nombre, puntaje:0}
     let saludo= "Hola "+nombre+ "!! Bienvenida al Mundo de los Gatitos Exploradores!!";
     let saludoParticipante=document.getElementById("nombre1");
-    saludoParticipante.innerText=saludo;
+    saludoParticipante.textContent=saludo;
+    matesYGatos.crearCuenta();
 }
 
 matesYGatos.crearCuenta = function(){
   let randomNumeroA=Math.floor(Math.random()*999);
   numeroA=0+randomNumeroA;
   let primerNumero=document.getElementById("a1");
-  primerNumero.innerText=numeroA;
+  primerNumero.textContent=numeroA;
 
   let signo=["+", "-", "x"];
   let randomSigno=Math.floor(Math.random()*3);
   signo=signo[randomSigno];
   let signoCuenta=document.getElementById("signo");
-  signoCuenta.innerText=signo;
+  signoCuenta.textContent=signo;
 
   if (signo=="-"){
     randomNumeroB=Math.floor(Math.random()*(numeroA-1))}
@@ -32,7 +33,7 @@ matesYGatos.crearCuenta = function(){
 
   numeroB=0+randomNumeroB;
   let segundoNumero=document.getElementById("b1");
-  segundoNumero.innerText=numeroB;
+  segundoNumero.textContent=numeroB;
 
   let verlinea=document.getElementById("linea");
     if (verlinea.style.display="none"){
@@ -40,6 +41,7 @@ matesYGatos.crearCuenta = function(){
     }
 
   let resultado=document.getElementById("resultado");
+  //resultado.value.reset("");
   resultado.value="";
   if (resultado.style.display="none"){
     resultado.style.display="block";
@@ -63,6 +65,7 @@ matesYGatos.comprobarResultado=function(){
 
   if (signo=="+" && resultadoCuenta==a+b){
     alert("Perfecto "+matesYGatos.participante.identidad);
+    matesYGatos.presentacion();
   }
 
   else if (signo=="+" && resultadoCuenta!=a+b){
@@ -71,6 +74,7 @@ matesYGatos.comprobarResultado=function(){
 
   if (signo=="-" && resultadoCuenta==a-b){
     alert("Perfecto "+matesYGatos.participante.identidad);
+    matesYGatos.presentacion();
   }
 
   else if (signo=="-" && resultadoCuenta!=a-b){
@@ -79,6 +83,7 @@ matesYGatos.comprobarResultado=function(){
 
   if (signo=="x" && resultadoCuenta==a*b){
     alert("Perfecto "+matesYGatos.participante.identidad);
+    matesYGatos.presentacion();
   }
 
   else if (signo=="x" && resultadoCuenta!=a*b){
