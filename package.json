@@ -1,0 +1,22 @@
+{
+  "name": "matesygatitos",
+  "version": "1.0.0",
+  "description": "web para aprender matemáticas pra niñes de 5 a 10 años",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javierllugany/Mates.git"
+  },
+  "author": "JavierLlugany",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javierllugany/Mates/issues"
+  },
+  "homepage": "https://github.com/javierllugany/Mates#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

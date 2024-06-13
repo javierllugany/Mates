@@ -3,7 +3,7 @@ let matesYGatos = {};
 matesYGatos.presentacion=function(){
     let nombre=prompt("Cuál es tu nombre?")
     matesYGatos.participante={identidad:nombre, puntaje:0}
-    let saludo= "Hola "+nombre+ "!! Bienvenida al Mundo de los Gatitos Exploradores!!";
+    let saludo= "Hola "+nombre+ "!! Bienvenide al Mundo de los Gatitos Exploradores!!";
     let saludoParticipante=document.getElementById("nombre1");
     saludoParticipante.textContent=saludo;
     matesYGatos.crearCuenta();

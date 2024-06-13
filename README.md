@@ -1,2 +1,2 @@
 # Mates
-Este es un proyecto web para aprender matemaicas interactivamente, dirijido a niñes de 5 a 10 años
+Este es un proyecto web para aprender matemáticas interactivamente. Para niñes de 5 a 10 años
