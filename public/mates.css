@@ -115,7 +115,8 @@ body{
   text-align: right;
   background: none;
   color: white;
-  border: none;
+  border: yellow;
+  border-style: dashed;
   display: none;
   padding: 0px;
 }
@@ -141,11 +142,6 @@ body{
     font-size: 110%;
     width: 90vw;
     height: 60vh;
-  }
-
-  #resultado {
-    border: yellow;
-    border-style: dashed;
   }
 
 }
