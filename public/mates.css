@@ -2,21 +2,66 @@ body{
   text-align: center;
   font-family: 'Henny Penny', cursive;
   background-color: rgb(235, 152, 84);
-  background-image: url("fondopizarra.jpeg");
-  background-repeat: no-repeat;
-  background-position: center 10vh;
-  background-size: 80vw;
   color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  font-size: calc(3vw + 4vh + 0.2vmin);
+}
+
+#telonTotal{
+  display: none;
+  width: 100vw;
+  height: 100Vh;
+  background-color: rgb(235, 152, 84);
+  justify-items: center;
+  align-content: center;
+  position: absolute;
+}
+
+#telonTotal h2 {
+  font-size: 75%;
+  width: 90%;
+}
+
+#telonTotal input {
+  margin: 1vh;
+  width: auto;
+  height: auto;
+  background-color: pink;
+  border-color: blue;
+  font-family: 'Schoolbell', cursive;
+  font-size: 70%;
+  border-radius: 17px;
+  padding: 1vw;
+  cursor: pointer;
+}
+
+#participante {
+  width: 90vw;
+}
+
+#participante h2 {
+  font-size: 70%;
 }
 
 #pizarra{
-  top: 10vh;
+  background-image: url("fondopizarra.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   justify-self: center;
-  width: 60vw;
-  position: relative;
-  left: 20vw;
+  width: 80vw;
   font-family: 'Schoolbell', cursive;
-  font-size: 5em;
+  font-size: 50%;
+  height: 50vh;
+  align-content: center;
+  display: grid;
+}
+
+#pizarra img{
+
 }
 
 #cuenta1{
@@ -24,12 +69,12 @@ body{
   grid-template-areas: "signo a1"
                       "signo b1"
                       "linea linea"
-                      "nada c1"
-                      "nada prueba";
+                      "c1 c1"
+                      "prueba prueba";
   justify-content: center;
   color: white;
   grid-column-gap: 0.5em;
-  grid-template-rows: auto auto 5px auto;
+  grid-template-rows: auto;
 }
 
 #a1{
@@ -52,31 +97,34 @@ body{
 #linea{
   grid-area: linea;
   text-align: right;
-  line-height: 0;
+  line-height: 0.5px;
   display: none;
+  font-variant-position: super;
 }
 
 #c1{
   grid-area: c1;
-  text-align: right;
+  align-content: end;
+  display: grid;
 }
 
 #resultado{
   font-family: "Schoolbell", cursive;
-  font-size: 1em;
-  margin-top: 0.5em;
+  font-size: 100%;
+  margin-top: 0.2em;
   text-align: right;
   background: none;
   color: white;
   border: none;
   display: none;
+  padding: 0px;
 }
 
 #prueba{
   grid-area: prueba;
   font-family: "Schoolbell", cursive;
-  font-size: 0.3em;
-  margin-top: 0.5em;
+  font-size: 70%;
+  margin-top: 1em;
   text-align: center;
   background: none;
   color: white;
@@ -84,4 +132,20 @@ body{
   width: max-content;
   justify-self: end;
   display: none;
+}
+
+@media screen and (orientation:portrait) {
+
+  #pizarra {
+    background-size: 100% 100%;
+    font-size: 110%;
+    width: 90vw;
+    height: 60vh;
+  }
+
+  #resultado {
+    border: yellow;
+    border-style: dashed;
+  }
+
 }

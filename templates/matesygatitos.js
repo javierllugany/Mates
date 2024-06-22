@@ -10,11 +10,14 @@ const template = function(dataFrontpage){
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
     </head>
     <body>
+      <div id="telonTotal">
+        <h2 id="queHaces"></h2>
+        <input type="submit" id="sigue" value="Sigo yo">
+        <input type="submit" id="cambia" value="Ahora le toca a otre">
+      </div>
       <div id="participante">
         <h2 id="nombre1"></h2>
       </div>
@@ -23,7 +26,7 @@ const template = function(dataFrontpage){
           <div id="a1"></div>
           <div id="signo"></div>
           <div id="b1"></div>
-          <div id="linea">___</div>
+          <div id="linea">____</div>
           <div id="c1">
             <input type="text" name="resultado" id="resultado" size="4" maxlength="4">
           </div>
